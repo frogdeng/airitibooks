@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>AritiBook</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/popup.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+</head>
+
+
+<body>
+	
+<header>
+	<div class="logo">
+		<img src="images/airiti_logo.png" alt="">
+	</div>
+	<div class="search">
+		<input type="text"> 
+		<a href=""><i class="fa fa-search"></i></a>
+		<div class="search_dropdown"><i class="fa fa-chevron-down "></i></div>
+	</div>
+	<div class="loginfun">
+		<a href="">登出</a>
+		<div class="name">Hi 飄髮哥您好！</div>
+	</div>
+
+
+
+	<script>
+
+		$(function(){
+
+			$('.open-popup-link').magnificPopup({
+			  type:'inline',
+			  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+			});
+
+		});
+
+
+
+	</script>
+</header>
+
+<div class="clear"></div>
+
+
+
+
+
+<div class="wrapper">
+	<div class="go">
+
+		<div class="menu">
+			<ul>
+				<li class="tooltip"><a href="" data-tooltip="資料上傳"><img src="images/icon_1.png" alt=""></a></li>
+				<li class="tooltip"><a href="" data-tooltip="個人資料管理"><img src="images/icon_2.png" alt=""></a></li>
+				<li class="tooltip"><a href="" data-tooltip="檔案空間管理"><img src="images/icon_3.png" alt=""></a></li>
+				<li class="tooltip"><a href="" data-tooltip="使用說明"><img src="images/icon_4.png" alt=""></a></li>
+				<li class="tooltip"><a href="" data-tooltip="問題回報"><i class="fa fa-question-circle"></i></a></li>
+			</ul>
+
+
+		</div>
+
+
+<!-- aside_left -->
+		<div class="aside_left">
+
+			<div class="forposition_left">
+				<div class="close">
+					<img src="images/hamburger.jpg" alt="">
+				</div>
+
+					
+				<div class="switch_left">
+				<div class="right_content">
+
+				<!-- folder_content -->
+				<div class="folder_content">
+					<div class="newfolder"><i class="fa fa-plus-circle"></i> 新增資料夾</div>
+					<div class="categery_item">
+						<i class="fa fa-folder-o"></i> 博士論文  
+						<div class="count">  12 </div> 
+						<div class="addin"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+					</div>
+					<div class="categery_item">
+						<i class="fa fa-folder-o"></i> 碩士論文 
+						<div class="count">39</div>
+						<div class="addin"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+						</div>
+					<div class="categery_item">
+						<i class="fa fa-folder-o"></i> 期刊研究 
+						<div class="count">52</div>
+						<div class="addin"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+					</div>
+					<div class="categery_item">
+						<i class="fa fa-folder-o"></i> 重要註釋 
+						<div class="count">102</div>
+						<div class="addin"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+					</div>
+					<div class="categery_item">
+						<i class="fa fa-folder-o"></i> 其他 
+						<div class="count">102</div>
+						<div class="addin"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+					</div>
+				</div>
+
+
+
+				<div class="title_5">編輯標籤  <i class="fa fa-caret-down"></i></div>
+					<div class="edittag">
+						<textarea name="" id=""></textarea><a href=""><i class="fa fa-plus-circle"></i></a>	
+						<div class="taglist">民主 <div class="delete"><i class="fa fa-times"></i></div></div>
+						<div class="taglist">民主 <div class="delete"><i class="fa fa-times"></i></div></div>
+						<div class="taglist">民主 <div class="delete"><i class="fa fa-times"></i></div></div>
+						<div class="taglist">民主 <div class="delete"><i class="fa fa-times"></i></div></div>
+						
+					</div>
+				</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+
+<!-- maincontent -->
+		<div class="maincontent">
+				<div class="search_dropdown_content">
+					<div class="forthis">
+						
+						<h6>更多查詢條件</h6>
+						<div class="input_1">
+							<input id="d1" type="text" placeholder="所有欄位">
+						</div>
+
+						<div class="input_2">
+							<input id="d1" type="text" placeholder="篇名，關鍵字，摘要">
+						</div>
+
+						<div class="input_2">
+							<input id="d1" type="text" placeholder="作者">
+						</div>
+						<div class="clear"></div>
+
+						<div class="input_1">
+							<input id="d1" type="text" placeholder="刊名/書名/論文發表系所/">
+						</div>
+
+						<div class="input_1">
+							<input id="d1" type="text" placeholder="DOI">
+						</div>
+
+						<div class="clear" style="height:10px"></div>
+
+						
+						<div class="checkbox_1">
+						<h6>出版地區</h6>
+							<label for="taiwan"><input type="checkbox" id="taiwan"/>台灣</label>
+							<label for="china"><input type="checkbox" id="china"/>中國大陸（含港澳）</label>
+							<label for="usa"><input type="checkbox" id="usa"/>美國</label>
+							<label for="others"><input type="checkbox" id="others"/>其他地區</label>
+						</div>
+						<button><i class="fa fa-search"></i> 搜尋</button>
+
+						
+					</div>
+				</div>
+				
+			<div class="detail">
+
+				<div class="breadcrumb">
+					<a href="">我的文獻智慧工具集</a>  <div class="rrr">></div>  <a href="">我的收藏檔案</a>   <div class="rrr">></div>  <a href="">重要註釋</a>   <div class="rrr">></div> <span style="color: #13AAC7">深度後分類</span>
+				</div>
+
+				<div class="operateTag">
+				
+						<div class="thesis_checkbox">
+							<input type="checkbox" id="ss1"/>
+					        <label for="ss1">
+					          <div><i class="fa fa-check"></i></div>
+					        </label>文件全選 
+						</div>
+
+					<button href="#note_1" class="output open-popup-link">
+						<i class="fa fa-external-link"></i> 輸出面板
+					</button>
+
+					<button href="#note_2" class="output open-popup-link">
+						<i class="fa fa-external-link"></i> 資料夾管理
+					</button>
+
+					<button href="#note_3" class="output open-popup-link">
+						<i class="fa fa-external-link"></i> 內容標籤
+					</button>
+
+
+		<!-- 			<button href="#note_2" class="addtag open-popup-link">
+						<i class="fa fa-tag"></i> 加上標籤
+					</button> -->
+
+				</div>
+	
+
+				<!-- operateDropdown -->
+				<div class="operateDropdown">
+					<div class="dropdown_1">
+					</div>
+					<div class="dropdown_2">
+
+					</div>
+				</div>
+
+
+
+
+
+				<div class="thesis">
+					<div class="thesis_tag_wrapper">
+						<a href="" class="thesis_tag">民主</a>
+						<a href="" class="thesis_tag">自由</a>
+						<a href="" class="thesis_tag">選舉</a>
+						<a href="" class="thesis_tag">主權在民</a>
+						<div class="clear"></div>
+					</div>
+
+
+				<!-- paper1 -->
+				<div class="title_wrapper">
+					<div class="paper_title">
+						<h1>現代美術建設新鄉里：日治時期李梅樹美術活動及人物畫研究</h1>
+						<div class="thesis_checkbox">
+							<input type="checkbox" id="check1"/>
+					        <label for="check1">
+					          <div><i class="fa fa-check"></i></div>
+					        </label>
+						</div>
+					</div>
+
+					<div class="paper_switch ">
+						<div class="thesis_thumbnail">
+							<img src="images/s01.jpg" alt="">
+						</div>
+
+						<div class="thesis_about">
+							<p>作者: 林明鏘(Ming-Chiang Lin)</p>
+							<p>所屬性質: 碩士論文</p>
+							<p>所屬單位: 臺灣大學生物資源暨農學院實驗林研究報告</p>
+							<p>文獻年份: 2015</p>
+							<p>學科分類: 社會科學</p>
+							<p>關鍵字: 機構典藏、數位資訊</p>
+						</div>
+
+						<div class="clear"></div>
+						<div class="thesis_description">
+							<p><span class="blue">議會制</span>又稱內閣制，是<span class="orange">民主政治制度</span>的一種，特點是其政府首腦的支持，而這種支持通過兩種途徑落實：第一是議會改選後的多數議席支持，第二是政府首腦贏得議會的信任投票。因此，所屬政黨未能贏得議會大選的政府首腦連同其內閣必須提出辭職，而未能通過民主政治制議會信任投票的<span class="orange">政府首腦</span>，連同其內閣也必須辭職。由<span class="blue">議會</span>重新在席位居多數的黨派中協商選舉產生新的首腦與內閣。議會制下政府首腦（總理）的權力普遍較大......</p>
+						</div>
+					</div>
+				</div>	
+
+
+
+				<!-- paper2 -->
+				<div class="thesis_tag_wrapper">
+						<a href="" class="thesis_tag">民主</a>
+						<a href="" class="thesis_tag">自由</a>
+						<a href="" class="thesis_tag">選舉</a>
+						<a href="" class="thesis_tag">主權在民</a>
+						<div class="clear"></div>
+				</div>
+
+
+				<div class="title_wrapper">
+					<div class="paper_title">
+						<h1>史料與歷史文化的新展示:1930年台灣文化三百年祭史料展覽會</h1>
+						<div class="thesis_checkbox">
+							<input type="checkbox" id="check2"/>
+					        <label for="check2">
+					          <div><i class="fa fa-check"></i></div>
+					        </label>
+						</div>
+					</div>
+
+					<div class="paper_switch ">
+						<div class="thesis_thumbnail">
+							<img src="images/s01.jpg" alt="">
+						</div>
+
+						<div class="thesis_about">
+							<p>作者: 林明鏘(Ming-Chiang Lin)</p>
+							<p>所屬性質: 碩士論文</p>
+							<p>所屬單位: 臺灣大學生物資源暨農學院實驗林研究報告</p>
+							<p>文獻年份: 2015</p>
+							<p>學科分類: 社會科學</p>
+							<p>關鍵字: 機構典藏、數位資訊</p>
+
+						</div>
+
+						<div class="clear"></div>
+						<div class="thesis_description">
+							<p><span class="blue">議會制</span>又稱內閣制，是<span class="orange">民主政治制度</span>的一種，特點是其政府首腦的支持，而這種支持通過兩種途徑落實：第一是議會改選後的多數議席支持，第二是政府首腦贏得議會的信任投票。因此，所屬政黨未能贏得議會大選的政府首腦連同其內閣必須提出辭職，而未能通過民主政治制議會信任投票的<span class="orange">政府首腦</span>，連同其內閣也必須辭職。由<span class="blue">議會</span>重新在席位居多數的黨派中協商選舉產生新的首腦與內閣。議會制下政府首腦（總理）的權力普遍較大......</p>
+						</div>
+					</div>
+				</div>	
+
+				<!-- paper3 -->
+
+				<div class="thesis_tag_wrapper">
+						<a href="" class="thesis_tag">民主</a>
+						<a href="" class="thesis_tag">自由</a>
+						<a href="" class="thesis_tag">選舉</a>
+						<a href="" class="thesis_tag">主權在民</a>
+						<div class="clear"></div>
+					</div>
+
+				<div class="title_wrapper">
+					<div class="paper_title">
+						<h1>運輸的圖像：盤車圖的形塑和變遷</h1>
+						<div class="thesis_checkbox">
+							<input type="checkbox" id="check3"/>
+					        <label for="check3">
+					          <div><i class="fa fa-check"></i></div>
+					        </label>
+						</div>
+					</div>
+
+					<div class="paper_switch ">
+						<div class="thesis_thumbnail">
+							<img src="images/s01.jpg" alt="">
+						</div>
+
+						<div class="thesis_about">
+							<p>作者: 林明鏘(Ming-Chiang Lin)</p>
+							<p>所屬性質: 碩士論文</p>
+							<p>所屬單位: 臺灣大學生物資源暨農學院實驗林研究報告</p>
+							<p>文獻年份: 2015</p>
+							<p>學科分類: 社會科學</p>
+							<p>關鍵字: 機構典藏、數位資訊</p>
+						</div>
+
+						<div class="clear"></div>
+						<div class="thesis_description">
+							<p><span class="blue">議會制</span>又稱內閣制，是<span class="orange">民主政治制度</span>的一種，特點是其政府首腦的支持，而這種支持通過兩種途徑落實：第一是議會改選後的多數議席支持，第二是政府首腦贏得議會的信任投票。因此，所屬政黨未能贏得議會大選的政府首腦連同其內閣必須提出辭職，而未能通過民主政治制議會信任投票的<span class="orange">政府首腦</span>，連同其內閣也必須辭職。由<span class="blue">議會</span>重新在席位居多數的黨派中協商選舉產生新的首腦與內閣。議會制下政府首腦（總理）的權力普遍較大......</p>
+						</div>
+					</div>
+				</div>	
+
+				<!-- paper4 -->
+				<div class="thesis_tag_wrapper">
+						<a href="" class="thesis_tag">民主</a>
+						<a href="" class="thesis_tag">自由</a>
+						<a href="" class="thesis_tag">選舉</a>
+						<a href="" class="thesis_tag">主權在民</a>
+						<div class="clear"></div>
+					</div>
+
+				<div class="title_wrapper">
+					<div class="paper_title">
+						<h1>生活美術的教育家：顏水龍的臺灣工藝活動研究1930-50年代</h1>
+						<div class="thesis_checkbox">
+							<input type="checkbox" id="check4"/>
+					        <label for="check4">
+					          <div><i class="fa fa-check"></i></div>
+					        </label>
+						</div>
+					</div>
+
+					<div class="paper_switch ">
+						<div class="thesis_thumbnail">
+							<img src="images/s01.jpg" alt="">
+						</div>
+
+						<div class="thesis_about">
+							<p>作者: 林明鏘(Ming-Chiang Lin)</p>
+							<p>所屬性質: 碩士論文</p>
+							<p>所屬單位: 臺灣大學生物資源暨農學院實驗林研究報告</p>
+							<p>文獻年份: 2015</p>
+							<p>學科分類: 社會科學</p>
+							<p>關鍵字: 機構典藏、數位資訊</p>
+						</div>
+
+						<div class="clear"></div>
+						<div class="thesis_description">
+							<p><span class="blue">議會制</span>又稱內閣制，是<span class="orange">民主政治制度</span>的一種，特點是其政府首腦的支持，而這種支持通過兩種途徑落實：第一是議會改選後的多數議席支持，第二是政府首腦贏得議會的信任投票。因此，所屬政黨未能贏得議會大選的政府首腦連同其內閣必須提出辭職，而未能通過民主政治制議會信任投票的<span class="orange">政府首腦</span>，連同其內閣也必須辭職。由<span class="blue">議會</span>重新在席位居多數的黨派中協商選舉產生新的首腦與內閣。議會制下政府首腦（總理）的權力普遍較大......</p>
+						</div>
+					</div>
+				</div>	
+
+
+
+
+			<div class="page_wrapper">
+				<ul>
+					<li class="page_on">1</li>
+					<li><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li><a href="">5</a></li>
+					<div class="page_p">......</div>
+					<li><a href="">29</a></li>
+
+				</ul>
+				<div class="clear"></div>
+			</div>
+
+
+
+
+			
+			</div>
+
+			<br>
+			<br>
+			<br>
+
+			</div>
+		</div>
+
+
+
+
+
+<!-- aside_right -->
+		<div class="aside_right">
+			<div class="forposition_right">
+				<div class="close">
+					<img src="images/hamburger.jpg" alt="">
+				</div>
+				
+					<div class="switch_right">
+					<div class="right_content">
+
+						<!-- editmemo -->
+						<div class="title_1">編輯筆記 <i class="fa fa-caret-down"></i></div>
+						<div class="editmemo">
+							<textarea name="" id=""></textarea>	
+							<button class="editmemo_save">確定輸入</button> 
+						</div>
+						
+
+
+						<div class="title_2">詞類分析-人物統計 <i class="fa fa-caret-down"></i></div>
+						<div class="analysis_1">
+							<div class="item">陳小黑 <div class="count">23</div></div>
+							<div class="item">林爽文 <div class="count">198</div></div>
+							<div class="item">伊能嘉矩 <div class="count">55</div></div>
+							<div class="item">鳥居武龍藏 <div class="count">78</div></div>
+							<div class="item">超級飄髮哥 <div class="count">24</div></div>
+							<div class="item">Max Richter <div class="count">90</div></div>
+						</div>
+
+
+						<div class="title_3">詞類分析-地理統計 <i class="fa fa-caret-down"></i></div>
+						<div class="analysis_2">
+							<div class="item">陳小黑 <div class="count">23</div></div>
+							<div class="item">林爽文 <div class="count">198</div></div>
+							<div class="item">伊能嘉矩 <div class="count">55</div></div>
+							<div class="item">鳥居武龍藏 <div class="count">78</div></div>
+							<div class="item">超級飄髮哥 <div class="count">24</div></div>
+							<div class="item">Max Richter <div class="count">90</div></div>
+						</div>
+
+						<div class="title_4">詞類分析-關鍵字統計 <i class="fa fa-caret-down"></i></div>
+						<div class="analysis_3">
+							<div class="item">陳小黑 <div class="count">23</div></div>
+							<div class="item">林爽文 <div class="count">198</div></div>
+							<div class="item">伊能嘉矩 <div class="count">55</div></div>
+							<div class="item">鳥居武龍藏 <div class="count">78</div></div>
+							<div class="item">超級飄髮哥 <div class="count">24</div></div>
+							<div class="item">Max Richter <div class="count">90</div></div>
+						</div>
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+						
+					</div>
+					</div>
+			</div>
+		</div>
+
+
+	</div>
+	<div class="clear"></div>
+</div>
+
+
+
+<!-- Magnific-Popup #1 -->
+<div id="note_1" class="white-popup_1 input_panel mfp-hide">
+	<div class="top">
+		<h6>共九筆</h6>
+	</div>
+	<div class="main">
+		<div class="ss1">
+			自訂匯出欄位： 				
+			<select name="" id="" class="select_module p30">
+				<option value="出版年月">出版年月</option>
+				<option value="出版年月">刊名順序</option>
+			</select>
+
+			<label for="r1">
+				<input type="radio" name="add" id="r1">遞增
+			</label>
+
+			<label for="r2">
+				<input type="radio" name="decrease" id="r2">遞減
+			</label>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="ss1">
+			<label for="q1"><input type="checkbox" name="" id="q1"> 篇名</label>
+			<label for="q2"><input type="checkbox" name="" id="q2"> 作者</label>
+			<label for=""><input type="checkbox" name="" id=""> 刊名</label>
+			<label for=""><input type="checkbox" name="" id=""> 卷期</label>
+			<label for=""><input type="checkbox" name="" id=""> 出版年月</label>
+			<label for=""><input type="checkbox" name="" id=""> 頁次</label>
+			<label for=""><input type="checkbox" name="" id=""> 資料語文</label>
+			<label for=""><input type="checkbox" name="" id=""> 專輯</label>
+			<label for=""><input type="checkbox" name="" id=""> 內容註釋</label>
+			<label for=""><input type="checkbox" name="" id=""> 關鍵詞</label>
+			<label for=""><input type="checkbox" name="" id=""> 中文摘要</label>
+			<label for=""><input type="checkbox" name="" id=""> 英文摘要</label>
+			<label for=""><input type="checkbox" name="" id=""> 全文連結</label>
+		</div>
+		</div>
+		<div class="main">
+			<div class="ss2">
+				自訂匯出欄位
+				<label for=""><input type="radio" name="add" id=""> TXT格式</label>
+				<label for=""><input type="radio" name="add" id=""> CSV格式</label>
+				<label for=""><input type="radio" name="add" id=""> ENDNOTE</label>
+				<label for=""><input type="radio" name="add" id=""> REFWORKS</label>
+				<div class="clear"></div>
+
+				參考書目
+				<label for=""><input type="radio" name="add" id=""> APA</label>
+				<label for=""><input type="radio" name="add" id=""> Chicago</label>
+				<label for=""><input type="radio" name="add" id=""> MLA</label>
+			</div>
+		</div>
+		<button class="summit_ok">匯出勾選資料</button>
+		<div class="clear"></div>
+</div>
+
+
+<!-- Magnific-Popup #2 -->
+
+<div id="note_2" class="white-popup_1 input_panel mfp-hide">
+	<div class="top">
+		<h6>您共選擇九筆資料進行資料夾管理</h6>
+	</div>
+	<div class="main">
+		<div class="ss1">
+			選擇資料夾： 				
+			<select name="" id="" class="select_module p30">
+				<option value="出版年月">自然科學</option>
+				<option value="出版年月">數位典藏</option>
+				<option value="出版年月">學生論文</option>
+				<option value="出版年月">台灣史</option>
+				<option value="出版年月">自動機相關</option>
+				<option value="出版年月">建立新資料夾</option>
+				
+			</select>
+
+		</div>
+	
+
+		<div class="clear"></div>	
+		</div>
+		<button class="summit_ok">加入資料夾</button>
+		<div class="clear"></div>
+</div>
+
+
+<!-- Magnific-Popup #3 -->
+<div id="note_3" class="white-popup_1 input_panel mfp-hide">
+	<div class="top">
+		<h6>您共選擇九筆資料進行內容標籤</h6>
+	</div>
+	<div class="main">
+		<div class="ss1">
+			選擇資料夾： 				
+			<select name="" id="" class="select_module p30">
+				<option value="出版年月">自然科學</option>
+				<option value="出版年月">數位典藏</option>
+				<option value="出版年月">學生論文</option>
+				<option value="出版年月">台灣史</option>
+				<option value="出版年月">自動機相關</option>
+				<option value="出版年月">建立新資料夾</option>
+				
+			</select>
+
+		</div>
+	
+
+		<div class="clear"></div>	
+		</div>
+		<button class="summit_ok">加入內容標籤</button>
+		<div class="clear"></div>
+</div>
+
+
+
+
+
+
+<!-- <footer>Copyright © 2015 All Rights Reserved.</footer> -->
+
+</body>
+</html>

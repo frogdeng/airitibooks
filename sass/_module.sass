@@ -1,0 +1,588 @@
+
+
+@import reset
+@import compass
+@import compass/css3
+@import ../bower_components/susy/sass/susy
+
+@import _map.scss
+
+
+
+body
+	background: #FFF
+
+a 
+	color: #555
+
+
+
+
+.clear
+	clear: both
+
+
++keyframes(square) 
+	0%
+		transform: translateY(0)
+	100%
+		transform: translateY(-700px) rotate(600deg)
+
+
+
+// shorthand
+$desktop: 12 after
+$pad: 8 after
+
+$breakpoint_desktop: 950px
+$breakpoint_pad: 550px
+
+
+$susy: (debug: (image: hide))
+
+
+
+
+
+header
+	width: 100%
+	height: 60px
+	background: #222222
+	position: fixed
+	top: 0
+	z-index: 5100
+	.logo
+		position: absolute
+		top: 15px
+		left: 50px
+	.loginfun
+		position: absolute
+		width: 350px
+		height: 40px
+		right: 20px
+		top: 10px
+		font-size: 14px
+		color: #FFF
+		.name
+			float: right
+			line-height: 40px
+		a 
+			display: block
+			width: 40px
+			height: 40px
+			line-height: 40px
+			text-align: center
+			float: right
+			margin-left: 10px
+			border-radius: 50%
+			background: #444646
+			font-size: 13px
+			color: #FFF
+	.search
+		position: absolute
+		width: 30%
+		height: 60px
+		left: 50%
+		margin-left: -15%
+		top: 0px
+
+		input
+			display: block
+			float: left
+			width: 80%
+			height: 30px
+			margin-top: 15px
+			background: #222
+
+			border: none
+			border-bottom: 1px solid #555
+			box-shadow: none
+			color: #888
+			// border-radius: 20px
+			padding: 0 15px
+			
+		a
+			display: block
+			float: left
+			margin-top: 21px
+			margin-left: -30px
+			color: #777
+		.search_dropdown
+			float: left
+			margin-left: 10px
+			margin-top: 12px
+			background: #444
+			height: 35px
+			width: 35px
+			line-height: 35px
+			color: #999
+			text-align: center
+			cursor: pointer
+			+transition(all 0.3s ease)
+			&:hover
+				background: #48C0D7
+				color: #FFF
+
+
+
+
+
+.wrapper
+	margin-top: 60px
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		.go
+			height: 100%
+			+span(12)
+			background: #FFF
+			display: flex
+			display: -webkit-flex
+			+transition(all .5s)
+		
+			.menu
+				height: 100%
+				width: 70px
+				background: #e9e9e9
+				position: fixed
+				z-index: 5000
+				top: 60px
+				padding-top: 30px
+				ul 
+					li 
+						a 
+							display: block
+							width: 60px
+							height: 60px
+							margin: 0 auto
+							margin-bottom: 30px
+							background: #e9e9e9
+							border-radius: 50%
+							+transition(all .5s)
+							img
+								display: block
+								margin: 0 auto
+								padding-top: 12px
+
+							&:hover
+								background: #FFFFFF
+
+			.aside_left
+				background: #FFF
+				border-right: 1px solid #E7E7E7
+				flex: 0 0 220px
+				-webkit-flex: 0 0 220px
+				+transition(all .3s)
+				// position: relative
+				margin-left: 70px
+				.forposition_left
+					position: fixed
+					width: 220px
+					height: 100%
+					background: #FFF
+					border-right: 1px solid #E9E8E8
+					overflow: auto
+					+transition(all .3s)
+					.close
+						position: absolute
+						cursor: pointer
+						right: 10px
+						top: 10px
+						img
+							width: 20px
+					.right_content
+						margin-top: 40px
+					
+
+					
+			.maincontent
+				height: 100%
+				width: 100%
+				background: #FFF
+				padding: 0px
+				position: relative
+				+transition(all .3s)
+				.ui
+					height: 500px
+					// background: #999
+					margin-bottom: 20px
+					border: 1px solid #999
+				p 
+					font-size: 14px
+					line-height: 1.5
+					color: #666
+					margin-bottom: 8px
+				img
+					margin-bottom: 20px
+
+
+			.aside_right
+				background: #FFF
+				flex-basis: 220px
+				flex-grow: 0
+				flex-shrink: 0
+				// background: #019
+				+transition(all .3s)
+				position: relative
+				.forposition_right
+					position: fixed
+					border-left: 1px solid #E7E7E7
+					height: 100%
+					width: 220px
+					background: #FFF
+					overflow: auto
+					+transition(all .3s)
+					.close
+						position: absolute
+						cursor: pointer
+						left: 10px
+						top: 10px
+						img
+							width: 20px
+					.right_content
+						margin-top: 40px
+
+
+
+
+
+
+
+.hamburg-close-left
+	flex: 0 0 40px!important
+	-webkit-flex: 0 0 41px!important
+	background: #e0e0e0 !important
+
+.hamburg-close-right
+	width: 45px !important
+	background: #e0e0e0 !important
+	flex-basis: 45px !important
+	flex-grow: 0 !important
+	flex-shrink: 0 !important
+	
+.gone
+	display: none
+
+.switch_go_left
+	width: 45px  !important
+	background: #e0e0e0 !important
+	+transition(all .3s)
+
+.switch_go_right
+	width: 45px  !important
+	background: #e0e0e0 !important
+	+transition(all .3s)
+
+
+
+
+footer
+	z-index: 1000
+	width: 100%
+	height: 50px
+	// background: #444 !important
+	color: #999
+	text-align: center
+	font-size: 13px !important
+	padding-top: 20px !important
+
+
+
+.tooltip 
+	a
+		position: relative
+		color: #954
+		// &::before
+		// 	content: ""
+		// 	border-left: 10px solid transparent
+		// 	border-right: 10px solid transparent
+		// 	border-top: 10px solid #abcdef
+		// 	position: absolute
+		// 	left: 0%
+		// 	bottom: 90%
+		// 	height: 0
+		// 	width: 0
+		// 	opacity: 1
+		// 	margin:0 0 20px 15px
+		// 	transition: all 0.4s ease
+		i
+			display: block
+			margin: 0 auto
+			text-align: center
+			font-size: 35px
+			color: #13aac7
+			padding-top: 13px
+
+		&:after
+			content: attr(data-tooltip)
+			color: #FFF
+			font-size: 12px
+			text-align: center
+			background: rgba(0,0,0,.6)
+			border-radius: 3px
+			position: absolute
+			left: -5px
+			bottom: -40%
+			white-space: nowrap
+			padding: 5px
+			opacity: 0
+			+transition(all .3s ease)
+		&:hover
+			&:after
+				opacity: 1 
+				// bottom: -40%
+				left: 10px
+
+
+
+
+.clear::before, .clear::after
+	content: ""
+	display: table
+
+.clear::after
+	clear: both
+
+
+
+
+
+
+			
+
+
+
+.search_dropdown_content
+	// position: absolute
+	// top: 0px
+	// position: fixed
+	width: 100%
+	z-index: 1000
+	height: 320px
+	background: rgba(0,0,0, .8)
+	padding: 0px
+	color: #FFF
+	font-size: 14px
+	line-height: 1.4
+	display: none
+	// +transition(all .2s)
+	.forthis
+		button
+			width: 100px
+			height: 35px
+			border: 1px solid #777
+			float: right
+			background: #555
+			color: #FFF
+			font-size: 13px
+			+transition(all .4s)
+			&:hover
+				background: #222
+		padding: 20px 40px
+		// display: none
+		// opacity: 1
+		// +transition(all .4s)
+
+		h6
+			margin-bottom: 8px
+		.input_1
+			width: 100%
+			height: 30px
+			margin-bottom: 10px
+			input[type='text']
+				display: block
+				width: 100%
+				border: 1px solid #777
+				background: #666
+				height: 30px
+				padding-left: 10px
+				font-size: 13px
+		.input_2
+			width: 50%
+			height: 30px
+			float: left
+			margin-bottom: 10px
+
+			input[type='text']
+				display: block
+				width: 100%
+				border: 1px solid #777
+				background: #666
+				height: 30px
+				padding-left: 10px
+				font-size: 13px	
+				color: #FFF
+
+		.checkbox_1
+			font-size: 14px
+			label
+				margin-right: 20px
+				float: left
+
+			input[type='checkbox']
+				width: 15px
+				height: 15px
+				margin-right: 3px
+				border: 1px solid #999
+				margin-top: 2px
+
+
+			
+
+
+.h_display
+	height: 320px !important
+	+transition(all .2s)
+	.forthis
+		display: block !important
+		opacity: 1 !important
+.show
+	display: block !important
+	opacity: 1 !important
+
+
+
+
+
+
+// aside content 
+.folder_content
+	margin-top: 40px
+	margin-bottom: 20px	
+	.newfolder
+		width: 100%
+		height: 40px
+		line-height: 40px
+		padding-left: 20px
+		background: #48C0D7
+		font-size: 14px
+		color: #FFF
+		cursor: pointer
+	.categery_item
+		width: 100%
+		height: 40px
+		line-height: 40px
+		padding-left: 20px
+		border-bottom: 1px solid #E9E8E8
+		font-size: 13px
+		color: #888
+		cursor: pointer
+		position: relative
+		+transition(all .5s)
+		&:hover
+			background: #D9E9FF
+
+		.count
+			position: absolute
+			top: 0px
+			right: 10px
+			// background: #123
+			font-size: 13px
+		.addin
+			position: absolute
+			top: 2px
+			right: 40px
+			i 
+				font-size: 20px
+
+
+
+
+
+.title_1, .title_2, .title_3, .title_4, .title_5 
+	height: 30px
+	width: 100%	
+	background: #48C0D7
+	text-align: center
+	line-height: 30px
+	font-size: 14px
+	color: #FFF
+	cursor: pointer
+	border-bottom: 1px solid #FFF
+	i 
+		color: #129cb6
+
+.editmemo
+	padding: 10px
+	margin-bottom: 10px
+	display: none
+
+	textarea
+		width: 100%
+		height: 160px
+		padding: 10px
+		color: #888
+		font-size: 13px
+		border: 1px solid #c0c0c0
+	.editmemo_save
+		display: block
+		width: 100%
+		height: 30px
+		line-height: 30px
+		background: #666
+		text-align: center
+		color: #FFF
+		font-size: 13px
+		border: none
+
+		+transition(all .3s)
+		&:hover
+			background: #444
+
+.analysis_1, .analysis_2, .analysis_3
+	padding: 0 5px
+	margin-bottom: 10px
+	display: none
+	.item
+		width: 100%
+		color: #888
+		line-height: 30px
+		font-size: 13px
+		padding: 0 10px
+		border-bottom: 1px solid #c0c0c0
+		cursor: pointer
+		+transition(all .3s)
+		&:hover
+			background: #D9E9FF
+		.count
+			float: right
+
+.edittag
+	padding: 10px
+	margin-bottom: 10px
+	display: none
+	textarea
+		width: 80%
+		height: 30px
+		margin-top: 5px
+		margin-right: 5px
+		padding: 5px
+		color: #888
+
+	a	 
+		i 
+			font-size: 30px
+			margin-top: 5px
+			color: #48C0D7
+	.taglist
+		margin: 10px 0px
+		line-height: 30px
+		font-size: 13px
+		padding: 0 10px
+		color: #555
+		background: #e5e5e5
+		.delete
+			float: right
+			font-size: 14px
+			color: #666
+
+
+
+.close_paper
+	display: none
+
+
+

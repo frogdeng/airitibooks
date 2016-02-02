@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>AritiBook</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/popup.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script>
+
+		$(function(){
+			$('.open-popup-link').magnificPopup({
+			  type:'inline',
+			  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+			});
+
+		});
+	</script>
+</head>
+
+
+<body>
+	
+<header>
+	<div class="logo">
+		<img src="images/airiti_logo.png" alt="">
+	</div>
+	<div class="search">
+		<input type="text"> 
+		<a href=""><i class="fa fa-search"></i></a>
+		<div class="search_dropdown"><i class="fa fa-chevron-down "></i></div>
+	</div>
+	<div class="loginfun">
+		<a href="">登出</a>
+		<div class="name">Hi 飄髮哥您好！</div>
+	</div>
+</header>
+
+<div class="clear"></div>
+
+
+
+
+
+<div class="wrapper">
+	<div class="go">
+
+		<div class="menu">
+			<ul>
+				<li class="tooltip"><a href="" data-tooltip="資料上傳"><img src="images/icon_1.png" alt=""></a></li>
+				<li class="tooltip"><a href="" data-tooltip="個人資料管理"><img src="images/icon_2.png" alt=""></a></li>
+				<li class="tooltip"><a href="" data-tooltip="檔案空間管理"><img src="images/icon_3.png" alt=""></a></li>
+				<li class="tooltip"><a href="" data-tooltip="使用說明"><img src="images/icon_4.png" alt=""></a></li>
+				<li class="tooltip"><a href="" data-tooltip="問題回報"><i class="fa fa-question-circle"></i></a></li>
+			</ul>
+
+
+		</div>
+
+
+<!-- aside_left -->
+		<div class="aside_left">
+
+			<div class="forposition_left">
+				<div class="close">
+					<img src="images/hamburger.jpg" alt="">
+				</div>
+
+					
+				<div class="switch_left">
+				<div class="right_content">
+
+				<!-- folder_content -->
+				<div class="folder_content">
+					<div class="newfolder"> 資料夾管理</div>
+					
+					<a href="gallery.html">
+					<div class="categery_item">
+						<i class="fa fa-folder-o"></i> 前次搜尋
+						<div class="count">  12 </div> 
+						<div class="addin"></div>
+					</div>
+					</a>
+					<div class="categery_item">
+						<i class="fa fa-folder-o"></i> 自然科學 
+						<div class="count">39</div>
+						<div class="addin"><a href=""><!--<i class="fa fa-plus-circle"></i>--></a></div>
+						</div>
+					<div class="categery_item">
+						<i class="fa fa-folder-o"></i> 數位典藏相關  
+						<div class="count">39</div>
+						<div class="addin"><a href=""><!--<i class="fa fa-plus-circle"></i>--></a></div>
+						</div>
+					<div class="categery_item">
+						<i class="fa fa-folder-o"></i> 學生論文 
+						<div class="count">52</div>
+						<div class="addin"><a href=""><!--<i class="fa fa-plus-circle"></i>--></a></div>
+					</div>
+					<div class="categery_item">
+						<i class="fa fa-folder-o"></i> 台灣史
+						<div class="count">102</div>
+						<div class="addin"><a href=""><!--<i class="fa fa-plus-circle"></i>--></a></div>
+					</div>
+					<div class="categery_item">
+						<i class="fa fa-folder-o"></i> 自動機相關
+						<div class="count">102</div>
+						<div class="addin"><a href=""><!--<i class="fa fa-plus-circle"></i>--></a></div>
+					</div>
+				</div>
+
+
+
+				<div class="title_5">內容標籤  <i class="fa fa-caret-down"></i></div>
+					<div class="edittag">
+						<!--<textarea name="" id="" style="resize:none"></textarea><a href=""><i class="fa fa-plus-circle"></i></a>	-->
+						<div class="taglist">機構典藏 <div class="delete"><i class="fa fa-times"></i></div></div>
+						<div class="taglist">圖書館 <div class="delete"><i class="fa fa-times"></i></div></div>
+						<div class="taglist">資訊 <div class="delete"><i class="fa fa-times"></i></div></div>
+						<div class="taglist">網站 <div class="delete"><i class="fa fa-times"></i></div></div>
+						
+					</div>
+				</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+
+<!-- maincontent -->
+		<div class="maincontent">
+				<div class="search_dropdown_content">
+					<div class="forthis">
+						
+						<h6>更多查詢條件</h6>
+
+						<div class="input_1">
+							<input id="d1" type="text" placeholder="所有欄位">
+						</div>
+
+						<div class="input_2">
+							<input id="d1" type="text" placeholder="篇名，關鍵字，摘要">
+						</div>
+
+						<div class="input_2">
+							<input id="d1" type="text" placeholder="作者">
+						</div>
+						<div class="clear"></div>
+
+						<div class="input_1">
+							<input id="d1" type="text" placeholder="刊名/書名/論文發表系所/">
+						</div>
+
+						<div class="input_1">
+							<input id="d1" type="text" placeholder="DOI">
+						</div>
+
+						<div class="clear" style="height:10px"></div>
+
+						
+						<div class="checkbox_1">
+						<h6>出版地區</h6>
+							<label for="taiwan"><input type="checkbox" id="taiwan"/>台灣</label>
+							<label for="china"><input type="checkbox" id="china"/>中國大陸（含港澳）</label>
+							<label for="usa"><input type="checkbox" id="usa"/>美國</label>
+							<label for="others"><input type="checkbox" id="others"/>其他地區</label>
+						</div>
+						<button><i class="fa fa-search"></i> 搜尋</button>
+
+						
+					</div>
+				</div>
+				
+			<div class="detail">
+				
+
+				<div class="breadcrumb">
+					<a href="">我的文獻智慧工具集</a>  <div class="rrr">></div>  <a href="">我的收藏檔案</a>   <div class="rrr">></div>  <a href="">重要註釋</a>   <div class="rrr">></div> <span style="color: #13AAC7">深度後分類</span>
+				</div>
+
+				<div class="gotosearch">
+					<a href=""><i class="fa fa-arrow-left"></i> 回搜尋頁面</a>
+				</div>
+
+				<div class="thesis">
+					<div class="thesis_tag_wrapper">
+						<a href="" class="thesis_tag">機構典藏</a>
+						<a href="" class="thesis_tag">圖書館</a>
+						<a href="" class="thesis_tag">資訊</a>
+						<a href="" class="thesis_tag">網站</a>
+						<div class="clear"></div>
+				</div>
+
+
+	
+				<div class="title_wrapper">
+					<div class="paper_title">
+					
+						<h1>
+							<a href="#note_1" class="output open-popup-link"><i class="fa fa-pencil-square"></i></a> 	就是關不掉—鄉民沉浸在PTT裡的使用經驗
+						 </h1>	
+						
+
+						<div class="thesis_checkbox">
+							<input type="checkbox" id="check1"/>
+					        <label for="check1">
+					          <div><i class="fa fa-check"></i></div>
+					        </label>
+						</div>
+						
+					</div>
+
+					<div class="paper_switch ">
+
+						<div class="thesis_thumbnail">
+							<img src="images/s01.jpg" alt="">
+						</div>
+
+						<div class="thesis_about">
+							<p>作者: 林明鏘(Ming-Chiang Lin)</p>
+							<p>所屬性質: 碩士論文</p>
+							<p>所屬單位: 臺灣大學生物資源暨農學院實驗林研究報告</p>
+							<p>文獻年份: 2015</p>
+						</div>
+							
+						<div class="clear"></div>
+						
+
+						<div class="thesis_description">
+							<p><span class="blue">議會制</span>又稱內閣制，是<span class="orange">民主政治制度</span>的一種，特點是其政府首腦的支持，而這種支持通過兩種途徑落實：第一是議會改選後的多數議席支持，第二是政府首腦贏得議會的信任投票。因此，所屬政黨未能贏得議會大選的政府首腦連同其內閣必須提出辭職，而未能通過民主政治制議會信任投票的<span class="orange">政府首腦</span>，連同其內閣也必須辭職。由<span class="blue">議會</span>重新在席位居多數的黨派中協商選舉產生新的首腦與內閣。議會制下政府首腦（總理）的權力普遍較大......</p>
+
+							<p>議會制又稱內閣制，是民主政治制度的一種，特點是其政府首腦的支持，而這種支持通過兩種途徑落實：第一是議會改選後的多數議席支持，第二是政府首腦贏得議會的信任投票。因此，所屬政黨未能贏得議會大選的政府首腦連同其內閣必須提出辭職，而未能通過民主政治制議會信任投票的政府首腦，連同其內閣也必須辭職。由議會重新在席位居多數的黨派中協商選舉產生新的首腦與內閣。議會制下政府首腦（總理）的權力普遍較大......</p>
+						</div>
+
+					</div>
+					<div class="display_paper">
+						<div class="updown"><i class="fa fa-sort-asc"></i></div>
+					</div>
+
+
+				</div>	
+
+
+				<div class="thesis_section">
+
+					<!-- PDF -->
+					<div class="paper_img">
+						<img src="images/s01.jpg" alt="">
+					</div>
+
+
+
+
+					<div class="keywords">
+						關鍵詞：民主、議會、立法院、這是一個很長很長的故事
+					</div>
+
+				</div>
+
+
+					
+					<!-- reference tag -->
+				<div class="reference_wrapper">
+					<div class="reference_tab"><p class="text">參考文獻</p></div>
+					<div class="reference_tab"><p class="text">引用文獻</p></div>
+					<div class="reference_tab"><p class="text">相關文獻</p></div>
+					<div class="reference_tab"><p class="text">讀者文獻</p></div>
+					<div class="clear"></div>
+					<div class="bline"></div>
+					<div class="reference_content">
+						
+						<div class="reference_list">
+							<div class="a1"><a href=""><i class="fa fa-link"></i></a></div>
+							<div class="a2"> Moisture measurement of grains using humidity sensors. Transactions</div>
+							<div class="a3">L.H. Allen, H. Van Kelen, and H. Challa.</div>
+							<div class="a4">Transactions of the ASAE 44(3):1241-1245.</div>
+							<div class="a5">1991~2001</div>
+							<div class="clear"></div>
+						</div>
+
+						<div class="reference_list">
+							<div class="a1"><a href=""><i class="fa fa-link"></i></a></div>
+							<div class="a2"> Moisture measurement of grains using humidity sensors. Transactions</div>
+							<div class="a3">L.H. Allen, H. Van Kelen, and H. Challa.</div>
+							<div class="a4">Transactions of the ASAE 44(3):1241-1245.</div>
+							<div class="a5">1991~2001</div>
+							<div class="clear"></div>
+						</div>
+
+						<div class="reference_list">
+							<div class="a1"><a href=""><i class="fa fa-link"></i></a></div>
+							<div class="a2"> Moisture measurement of grains using humidity sensors. Transactions</div>
+							<div class="a3">L.H. Allen, H. Van Kelen, and H. Challa.</div>
+							<div class="a4">Transactions of the ASAE 44(3):1241-1245.</div>
+							<div class="a5">1991~2001</div>
+							<div class="clear"></div>
+						</div>
+
+
+						<div class="reference_list">
+							<div class="a1"><a href=""><i class="fa fa-link"></i></a></div>
+							<div class="a2"> Moisture measurement of grains using humidity sensors. Transactions</div>
+							<div class="a3">L.H. Allen, H. Van Kelen, and H. Challa.</div>
+							<div class="a4">Transactions of the ASAE 44(3):1241-1245.</div>
+							<div class="a5">1991~2001</div>
+							<div class="clear"></div>
+						</div>
+
+						<div class="reference_list">
+							<div class="a1"><a href=""><i class="fa fa-link"></i></a></div>
+							<div class="a2"> Moisture measurement of grains using humidity sensors. Transactions</div>
+							<div class="a3">L.H. Allen, H. Van Kelen, and H. Challa.</div>
+							<div class="a4">Transactions of the ASAE 44(3):1241-1245.</div>
+							<div class="a5">1991~2001</div>
+							<div class="clear"></div>
+						</div>
+
+
+						<div class="page_wrapper">
+							<ul>
+								<li class="page_on">1</li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+								<div class="page_p">......</div>
+								<li><a href="">29</a></li>
+
+							</ul>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+				</div>
+				</div>
+
+			<br>
+			<br>
+			<br>
+
+			</div>
+		</div>
+
+
+
+
+
+<!-- aside_right -->
+		<div class="aside_right">
+			<div class="forposition_right">
+				<div class="close">
+					<img src="images/hamburger.jpg" alt="">
+				</div>
+				
+					<div class="switch_right">
+					<div class="right_content">
+
+						<!-- editmemo -->
+						<div class="title_1">編輯筆記 <i class="fa fa-caret-down"></i></div>
+						<div class="editmemo">
+							<textarea name="" id=""></textarea>	
+							<button class="editmemo_save">確定輸入</button> 
+						</div>
+						
+
+
+						<div class="title_2">詞類分析-人物統計 <i class="fa fa-caret-down"></i></div>
+						<div class="analysis_1">
+							<div class="item">陳小黑 <div class="count">23</div></div>
+							<div class="item">林爽文 <div class="count">198</div></div>
+							<div class="item">伊能嘉矩 <div class="count">55</div></div>
+							<div class="item">鳥居武龍藏 <div class="count">78</div></div>
+							<div class="item">超級飄髮哥 <div class="count">24</div></div>
+							<div class="item">Max Richter <div class="count">90</div></div>
+						</div>
+
+
+						<div class="title_3">詞類分析-地理統計 <i class="fa fa-caret-down"></i></div>
+						<div class="analysis_2">
+							<div class="item">陳小黑 <div class="count">23</div></div>
+							<div class="item">林爽文 <div class="count">198</div></div>
+							<div class="item">伊能嘉矩 <div class="count">55</div></div>
+							<div class="item">鳥居武龍藏 <div class="count">78</div></div>
+							<div class="item">超級飄髮哥 <div class="count">24</div></div>
+							<div class="item">Max Richter <div class="count">90</div></div>
+						</div>
+
+						<div class="title_4">詞類分析-關鍵字統計 <i class="fa fa-caret-down"></i></div>
+						<div class="analysis_3">
+							<div class="item">陳小黑 <div class="count">23</div></div>
+							<div class="item">林爽文 <div class="count">198</div></div>
+							<div class="item">伊能嘉矩 <div class="count">55</div></div>
+							<div class="item">鳥居武龍藏 <div class="count">78</div></div>
+							<div class="item">超級飄髮哥 <div class="count">24</div></div>
+							<div class="item">Max Richter <div class="count">90</div></div>
+						</div>
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+						
+					</div>
+					</div>
+			</div>
+		</div>
+
+
+	</div>
+	<div class="clear"></div>
+</div>
+
+
+
+
+
+
+<div id="note_1" class="white-popup_1 input_panel mfp-hide">
+	<div class="top">
+		<h6>修改本篇書目資料：</h6>
+	</div>
+		<div class="main">
+			<div class="ss3">
+				學術文獻篇名： <input type="text" name="add" id="r1" value="臺灣機構典藏發展芻議 ">		
+				<div class="clear"></div>
+				作者： <input type="text" name="add" id="r1" value="項潔">		
+				<div class="clear"></div>
+				出處： <input type="text" name="add" id="r1" value="國科會數位典藏國家型科技計畫應用服務分項計畫">
+					<div class="clear"></div>
+				
+				所屬單位： <input type="text" name="add" id="r1" value="臺灣大學數位典藏實驗室">
+			<div class="clear"></div>
+				文獻年份： <input type="text" name="add" id="r1" value="2005">
+					<div class="clear"></div>
+				關鍵字： <input type="text" name="add" id="r1" value="機構典藏、三權漸進">
+				
+	
+		</div>
+			<div class="clear"></div>
+			<button class="summit_ok">修改資料</button>
+			<div class="clear"></div>
+
+	</div>
+</div>
+
+
+
+
+<!-- <footer>Copyright © 2015 All Rights Reserved.</footer> -->
+
+</body>
+</html>
