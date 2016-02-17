@@ -33,49 +33,43 @@ $( document ).ready(function() {
 
 
 
-  	// title_1
-  	$(".title_1").click(function(){
-  		if($(this).hasClass("open_aside")){
-			$(this).removeClass("open_aside");
-			$('.editmemo').slideUp(300);
-		} else{
-			$(this).addClass("open_aside");
-			$('.editmemo').slideDown(300);
-		}
-  	});
 
   	// title_2
   	$(".title_2").click(function(){
   		if($(this).hasClass("open")){
 			$(this).removeClass("open");
-			$('.analysis_1').slideUp(300);
+			$(this).parent().find('.analysis_2').slideUp(300);
 		} else{
 			$(this).addClass("open");
-			$('.analysis_1').slideDown(300);
+			$(this).parent().find('.analysis_2').slideDown(300);
 		}
   	});
 
-  	// title_3
-  	$(".title_3").click(function(){
-  		if($(this).hasClass("open")){
-			$(this).removeClass("open");
-			$('.analysis_2').slideUp(300);
-		} else{
-			$(this).addClass("open");
-			$('.analysis_2').slideDown(300);
-		}
-  	});
 
-  	// title_4
-  	$(".title_4").click(function(){
-  		if($(this).hasClass("open")){
-			$(this).removeClass("open");
-			$('.analysis_3').slideUp(300);
-		} else{
-			$(this).addClass("open");
-			$('.analysis_3').slideDown(300);
-		}
-  	});
+
+
+  // 	$(".title_4").click(function(){
+  // 		if($(this).hasClass("open")){
+		// 	$(this).removeClass("open");
+		// 	$(this).parent().find('.editmemo').slideUp(300);
+		// } else{
+		// 	$(this).addClass("open");
+		// 	$(this).parent().find('.aeditmemo').slideDown(300);
+		// }
+  // 	});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   	// edittag
@@ -88,6 +82,8 @@ $( document ).ready(function() {
 			$('.edittag').slideDown(300);
 		}
   	});
+
+
 
 
 
@@ -109,25 +105,25 @@ $( document ).ready(function() {
 
 
  	// output_display
-  // 	$(".output").click(function(){
-  // 		if($(this).hasClass("showcontent")){
-		// 	$(this).removeClass("showcontent");
-		// 	$('.dropdown_1').slideUp(300);
-		// } else{
-		// 	$(this).addClass("showcontent");
-		// 	$('.dropdown_1').slideDown(300);
-		// }
-  // 	});
+  	$(".output").click(function(){
+  		if($(this).hasClass("showcontent")){
+			$(this).removeClass("showcontent");
+			$('.dropdown_1').slideUp(300);
+		} else{
+			$(this).addClass("showcontent");
+			$('.dropdown_1').slideDown(300);
+		}
+  	});
 
-  // 	$(".addtag").click(function(){
-  // 		if($(this).hasClass("showcontent")){
-		// 	$(this).removeClass("showcontent");
-		// 	$('.dropdown_2').slideUp(300);
-		// } else{
-		// 	$(this).addClass("showcontent");
-		// 	$('.dropdown_2').slideDown(300);
-		// }
-  // 	});
+  	$(".addtag").click(function(){
+  		if($(this).hasClass("showcontent")){
+			$(this).removeClass("showcontent");
+			$('.dropdown_2').slideUp(300);
+		} else{
+			$(this).addClass("showcontent");
+			$('.dropdown_2').slideDown(300);
+		}
+  	});
 
 
 

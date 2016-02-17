@@ -12,6 +12,15 @@
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/js.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script>
+		$(function(){
+			$('.open-popup-link').magnificPopup({
+			  type:'inline',
+			  midClick: true 
+			  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+			});
+		});
+	</script>
 </head>
 
 
@@ -19,13 +28,15 @@
 	
 <header>
 	<div class="logo">
-		<img src="images/airiti_logo.png" alt="">
+		<a href="#"><img src="images/airiti_logo.png" alt=""></a>
 	</div>
+
 	<div class="search">
 		<input type="text"> 
 		<a href=""><i class="fa fa-search"></i></a>
 		<div class="search_dropdown"><i class="fa fa-chevron-down "></i></div>
 	</div>
+	
 	<div class="loginfun">
 		<a href="">登出</a>
 		<div class="name">Hi 飄髮哥您好！</div>
@@ -33,20 +44,48 @@
 
 
 
-	<script>
+	<!-- search_dropdown_content -->
+	<div class="search_dropdown_content">
+		<div class="forthis">
+			
+			<h6>更多查詢條件</h6>
+			<div class="input_1">
+				<input id="d1" type="text" placeholder="所有欄位">
+			</div>
 
-		$(function(){
+			<div class="input_2">
+				<input id="d1" type="text" placeholder="篇名，關鍵字，摘要">
+			</div>
 
-			$('.open-popup-link').magnificPopup({
-			  type:'inline',
-			  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-			});
+			<div class="input_2">
+				<input id="d1" type="text" placeholder="作者">
+			</div>
+			<div class="clear"></div>
 
-		});
+			<div class="input_1">
+				<input id="d1" type="text" placeholder="刊名/書名/論文發表系所/">
+			</div>
 
+			<div class="input_1">
+				<input id="d1" type="text" placeholder="DOI">
+			</div>
 
+			<div class="clear" style="height:10px"></div>
 
-	</script>
+			
+			<div class="checkbox_1">
+			<h6>出版地區</h6>
+				<label for="taiwan"><input type="checkbox" id="taiwan"/>台灣</label>
+				<label for="china"><input type="checkbox" id="china"/>中國大陸（含港澳）</label>
+				<label for="usa"><input type="checkbox" id="usa"/>美國</label>
+				<label for="others"><input type="checkbox" id="others"/>其他地區</label>
+			</div>
+			<button><i class="fa fa-search"></i> 搜尋</button>
+
+			
+		</div>
+	</div>
+
 </header>
 
 <div class="clear"></div>
@@ -84,40 +123,48 @@
 				<div class="right_content">
 
 				<!-- folder_content -->
-				<div class="folder_content">
-					<div class="newfolder"><i class="fa fa-plus-circle"></i> 新增資料夾</div>
+				<div class="folder_content">	
+					<div class="newfolder"> 資料夾管理</div>
+					
+					<a href="gallery.html">
 					<div class="categery_item">
-						<i class="fa fa-folder-o"></i> 博士論文  
+						<i class="fa fa-folder-o"></i> 前次搜尋
 						<div class="count">  12 </div> 
-						<div class="addin"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+						<div class="addin"></div>
 					</div>
+					</a>
 					<div class="categery_item">
-						<i class="fa fa-folder-o"></i> 碩士論文 
+						<i class="fa fa-folder-o"></i> 自然科學 
 						<div class="count">39</div>
-						<div class="addin"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+						<div class="addin"><a href=""><!--<i class="fa fa-plus-circle"></i>--></a></div>
 						</div>
 					<div class="categery_item">
-						<i class="fa fa-folder-o"></i> 期刊研究 
+						<i class="fa fa-folder-o"></i> 數位典藏相關  
+						<div class="count">39</div>
+						<div class="addin"><a href=""><!--<i class="fa fa-plus-circle"></i>--></a></div>
+						</div>
+					<div class="categery_item">
+						<i class="fa fa-folder-o"></i> 學生論文 
 						<div class="count">52</div>
-						<div class="addin"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+						<div class="addin"><a href=""><!--<i class="fa fa-plus-circle"></i>--></a></div>
 					</div>
 					<div class="categery_item">
-						<i class="fa fa-folder-o"></i> 重要註釋 
+						<i class="fa fa-folder-o"></i> 台灣史
 						<div class="count">102</div>
-						<div class="addin"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+						<div class="addin"><a href=""><!--<i class="fa fa-plus-circle"></i>--></a></div>
 					</div>
 					<div class="categery_item">
-						<i class="fa fa-folder-o"></i> 其他 
+						<i class="fa fa-folder-o"></i> 自動機相關
 						<div class="count">102</div>
-						<div class="addin"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+						<div class="addin"><a href=""><!--<i class="fa fa-plus-circle"></i>--></a></div>
 					</div>
 				</div>
 
 
 
-				<div class="title_5">編輯標籤  <i class="fa fa-caret-down"></i></div>
+				<div class="title_5 color_4">編輯標籤  <i class="fa fa-caret-down"></i></div>
 					<div class="edittag">
-						<textarea name="" id=""></textarea><a href=""><i class="fa fa-plus-circle"></i></a>	
+						<!-- <textarea name="" id=""></textarea><a href=""><i class="fa fa-plus-circle"></i></a>	 -->
 						<div class="taglist">民主 <div class="delete"><i class="fa fa-times"></i></div></div>
 						<div class="taglist">民主 <div class="delete"><i class="fa fa-times"></i></div></div>
 						<div class="taglist">民主 <div class="delete"><i class="fa fa-times"></i></div></div>
@@ -135,51 +182,20 @@
 
 <!-- maincontent -->
 		<div class="maincontent">
-				<div class="search_dropdown_content">
-					<div class="forthis">
-						
-						<h6>更多查詢條件</h6>
-						<div class="input_1">
-							<input id="d1" type="text" placeholder="所有欄位">
-						</div>
-
-						<div class="input_2">
-							<input id="d1" type="text" placeholder="篇名，關鍵字，摘要">
-						</div>
-
-						<div class="input_2">
-							<input id="d1" type="text" placeholder="作者">
-						</div>
-						<div class="clear"></div>
-
-						<div class="input_1">
-							<input id="d1" type="text" placeholder="刊名/書名/論文發表系所/">
-						</div>
-
-						<div class="input_1">
-							<input id="d1" type="text" placeholder="DOI">
-						</div>
-
-						<div class="clear" style="height:10px"></div>
-
-						
-						<div class="checkbox_1">
-						<h6>出版地區</h6>
-							<label for="taiwan"><input type="checkbox" id="taiwan"/>台灣</label>
-							<label for="china"><input type="checkbox" id="china"/>中國大陸（含港澳）</label>
-							<label for="usa"><input type="checkbox" id="usa"/>美國</label>
-							<label for="others"><input type="checkbox" id="others"/>其他地區</label>
-						</div>
-						<button><i class="fa fa-search"></i> 搜尋</button>
-
-						
-					</div>
-				</div>
+				
 				
 			<div class="detail">
 
 				<div class="breadcrumb">
 					<a href="">我的文獻智慧工具集</a>  <div class="rrr">></div>  <a href="">我的收藏檔案</a>   <div class="rrr">></div>  <a href="">重要註釋</a>   <div class="rrr">></div> <span style="color: #13AAC7">深度後分類</span>
+
+					<select name="" id="" class="select_module p30" style="float:right;">
+						<option value="出版年月">排序依據：關聯性</option>
+						<option value="出版年月">排序依據：觀看次數</option>
+						<option value="出版年月">排序依據：上傳時間</option>
+						<option value="出版年月">排序依據：作者</option>
+						<option value="出版年月">排序依據：出版年代</option>
+					</select>
 				</div>
 
 				<div class="operateTag">
@@ -212,26 +228,20 @@
 	
 
 				<!-- operateDropdown -->
-				<div class="operateDropdown">
+				<!-- <div class="operateDropdown">
 					<div class="dropdown_1">
 					</div>
 					<div class="dropdown_2">
 
 					</div>
-				</div>
+				</div> -->
 
 
 
 
 
 				<div class="thesis">
-					<div class="thesis_tag_wrapper">
-						<a href="" class="thesis_tag">民主</a>
-						<a href="" class="thesis_tag">自由</a>
-						<a href="" class="thesis_tag">選舉</a>
-						<a href="" class="thesis_tag">主權在民</a>
-						<div class="clear"></div>
-					</div>
+				
 
 
 				<!-- paper1 -->
@@ -247,17 +257,45 @@
 					</div>
 
 					<div class="paper_switch ">
+						<!-- img -->
 						<div class="thesis_thumbnail">
 							<img src="images/s01.jpg" alt="">
 						</div>
 
+						<!-- titles -->
 						<div class="thesis_about">
-							<p>作者: 林明鏘(Ming-Chiang Lin)</p>
-							<p>所屬性質: 碩士論文</p>
-							<p>所屬單位: 臺灣大學生物資源暨農學院實驗林研究報告</p>
-							<p>文獻年份: 2015</p>
-							<p>學科分類: 社會科學</p>
-							<p>關鍵字: 機構典藏、數位資訊</p>
+
+							<div class="thesis_about_left">
+								<p>作者: 林明鏘(Ming-Chiang Lin)</p>
+								<p>所屬性質: 碩士論文</p>
+								<p>所屬單位: 臺灣大學生物資源暨農學院實驗林研究報告</p>
+								<p>文獻年份: 2015</p>
+								<p>學科分類: 社會科學</p>
+								<p>關鍵字: 機構典藏、數位資訊</p>
+							</div>
+							<div class="thesis_about_right">
+								<h6>所屬資料夾 </h6>
+								<div class="tag_item_a">碩士論文 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_a">台灣史 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_a">泉械鬥 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_a">後現代建築 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_add"><input type="text"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+
+								<div class="clear" style="height: 10px"></div>
+
+								<h6>所屬標籤</h6>
+								<div class="tag_item_b">機構典藏 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_b">圖書館 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_b">北門 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_b">網站 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_b">美術 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_add"><input type="text"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+
+								<div class="clear" style="height: 20px"></div>
+
+							</div>
+						<div class="clear"></div>
+
 						</div>
 
 						<div class="clear"></div>
@@ -270,14 +308,6 @@
 
 
 				<!-- paper2 -->
-				<div class="thesis_tag_wrapper">
-						<a href="" class="thesis_tag">民主</a>
-						<a href="" class="thesis_tag">自由</a>
-						<a href="" class="thesis_tag">選舉</a>
-						<a href="" class="thesis_tag">主權在民</a>
-						<div class="clear"></div>
-				</div>
-
 
 				<div class="title_wrapper">
 					<div class="paper_title">
@@ -291,17 +321,44 @@
 					</div>
 
 					<div class="paper_switch ">
+						<!-- img -->
 						<div class="thesis_thumbnail">
 							<img src="images/s01.jpg" alt="">
 						</div>
 
+						<!-- titles -->
 						<div class="thesis_about">
-							<p>作者: 林明鏘(Ming-Chiang Lin)</p>
-							<p>所屬性質: 碩士論文</p>
-							<p>所屬單位: 臺灣大學生物資源暨農學院實驗林研究報告</p>
-							<p>文獻年份: 2015</p>
-							<p>學科分類: 社會科學</p>
-							<p>關鍵字: 機構典藏、數位資訊</p>
+
+							<div class="thesis_about_left">
+								<p>作者: 林明鏘(Ming-Chiang Lin)</p>
+								<p>所屬性質: 碩士論文</p>
+								<p>所屬單位: 臺灣大學生物資源暨農學院實驗林研究報告</p>
+								<p>文獻年份: 2015</p>
+								<p>學科分類: 社會科學</p>
+								<p>關鍵字: 機構典藏、數位資訊</p>
+							</div>
+							<div class="thesis_about_right">
+								<h6>所屬資料夾 </h6>
+								<div class="tag_item_a">碩士論文 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_a">台灣史 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_a">泉械鬥 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_a">後現代建築 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_add"><input type="text"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+
+								<div class="clear" style="height: 10px"></div>
+
+								<h6>所屬標籤</h6>
+								<div class="tag_item_b">機構典藏 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_b">圖書館 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_b">北門 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_b">網站 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_b">美術 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_add"><input type="text"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+
+								<div class="clear" style="height: 20px"></div>
+
+							</div>
+						<div class="clear"></div>
 
 						</div>
 
@@ -312,16 +369,9 @@
 					</div>
 				</div>	
 
+
+
 				<!-- paper3 -->
-
-				<div class="thesis_tag_wrapper">
-						<a href="" class="thesis_tag">民主</a>
-						<a href="" class="thesis_tag">自由</a>
-						<a href="" class="thesis_tag">選舉</a>
-						<a href="" class="thesis_tag">主權在民</a>
-						<div class="clear"></div>
-					</div>
-
 				<div class="title_wrapper">
 					<div class="paper_title">
 						<h1>運輸的圖像：盤車圖的形塑和變遷</h1>
@@ -334,17 +384,45 @@
 					</div>
 
 					<div class="paper_switch ">
+						<!-- img -->
 						<div class="thesis_thumbnail">
 							<img src="images/s01.jpg" alt="">
 						</div>
 
+						<!-- titles -->
 						<div class="thesis_about">
-							<p>作者: 林明鏘(Ming-Chiang Lin)</p>
-							<p>所屬性質: 碩士論文</p>
-							<p>所屬單位: 臺灣大學生物資源暨農學院實驗林研究報告</p>
-							<p>文獻年份: 2015</p>
-							<p>學科分類: 社會科學</p>
-							<p>關鍵字: 機構典藏、數位資訊</p>
+
+							<div class="thesis_about_left">
+								<p>作者: 林明鏘(Ming-Chiang Lin)</p>
+								<p>所屬性質: 碩士論文</p>
+								<p>所屬單位: 臺灣大學生物資源暨農學院實驗林研究報告</p>
+								<p>文獻年份: 2015</p>
+								<p>學科分類: 社會科學</p>
+								<p>關鍵字: 機構典藏、數位資訊</p>
+							</div>
+							<div class="thesis_about_right">
+								<h6>所屬資料夾 </h6>
+								<div class="tag_item_a">碩士論文 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_a">台灣史 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_a">泉械鬥 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_a">後現代建築 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_add"><input type="text"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+
+								<div class="clear" style="height: 10px"></div>
+
+								<h6>所屬標籤</h6>
+								<div class="tag_item_b">機構典藏 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_b">圖書館 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_b">北門 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_b">網站 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_b">美術 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_add"><input type="text"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+
+								<div class="clear" style="height: 20px"></div>
+
+							</div>
+						<div class="clear"></div>
+
 						</div>
 
 						<div class="clear"></div>
@@ -355,14 +433,6 @@
 				</div>	
 
 				<!-- paper4 -->
-				<div class="thesis_tag_wrapper">
-						<a href="" class="thesis_tag">民主</a>
-						<a href="" class="thesis_tag">自由</a>
-						<a href="" class="thesis_tag">選舉</a>
-						<a href="" class="thesis_tag">主權在民</a>
-						<div class="clear"></div>
-					</div>
-
 				<div class="title_wrapper">
 					<div class="paper_title">
 						<h1>生活美術的教育家：顏水龍的臺灣工藝活動研究1930-50年代</h1>
@@ -375,17 +445,45 @@
 					</div>
 
 					<div class="paper_switch ">
+						<!-- img -->
 						<div class="thesis_thumbnail">
 							<img src="images/s01.jpg" alt="">
 						</div>
 
+						<!-- titles -->
 						<div class="thesis_about">
-							<p>作者: 林明鏘(Ming-Chiang Lin)</p>
-							<p>所屬性質: 碩士論文</p>
-							<p>所屬單位: 臺灣大學生物資源暨農學院實驗林研究報告</p>
-							<p>文獻年份: 2015</p>
-							<p>學科分類: 社會科學</p>
-							<p>關鍵字: 機構典藏、數位資訊</p>
+
+							<div class="thesis_about_left">
+								<p>作者: 林明鏘(Ming-Chiang Lin)</p>
+								<p>所屬性質: 碩士論文</p>
+								<p>所屬單位: 臺灣大學生物資源暨農學院實驗林研究報告</p>
+								<p>文獻年份: 2015</p>
+								<p>學科分類: 社會科學</p>
+								<p>關鍵字: 機構典藏、數位資訊</p>
+							</div>
+							<div class="thesis_about_right">
+								<h6>所屬資料夾 </h6>
+								<div class="tag_item_a">碩士論文 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_a">台灣史 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_a">泉械鬥 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_a">後現代建築 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_add"><input type="text"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+
+								<div class="clear" style="height: 10px"></div>
+
+								<h6>所屬標籤</h6>
+								<div class="tag_item_b">機構典藏 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_b">圖書館 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_b">北門 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_b">網站 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_b">美術 <a href="#"><i class="fa fa-times"></i></a></div>
+								<div class="tag_item_add"><input type="text"><a href=""><i class="fa fa-plus-circle"></i></a></div>
+
+								<div class="clear" style="height: 20px"></div>
+
+							</div>
+						<div class="clear"></div>
+
 						</div>
 
 						<div class="clear"></div>
@@ -440,43 +538,86 @@
 					<div class="right_content">
 
 						<!-- editmemo -->
-						<div class="title_1">編輯筆記 <i class="fa fa-caret-down"></i></div>
+					<!-- 	<div class="title_1">檢索歷史 <i class="fa fa-caret-down"></i></div>
 						<div class="editmemo">
 							<textarea name="" id=""></textarea>	
 							<button class="editmemo_save">確定輸入</button> 
-						</div>
+						</div> -->
 						
 
-
-						<div class="title_2">詞類分析-人物統計 <i class="fa fa-caret-down"></i></div>
-						<div class="analysis_1">
-							<div class="item">陳小黑 <div class="count">23</div></div>
-							<div class="item">林爽文 <div class="count">198</div></div>
-							<div class="item">伊能嘉矩 <div class="count">55</div></div>
-							<div class="item">鳥居武龍藏 <div class="count">78</div></div>
-							<div class="item">超級飄髮哥 <div class="count">24</div></div>
-							<div class="item">Max Richter <div class="count">90</div></div>
+						<div class="data_interface">
+							<div class="title_2 color_1 open">檢索歷史 <i class="fa fa-caret-down"></i></div>
+							<div class="analysis_2" style="display: block;">
+								<div class="item">陳小黑 <div class="count">23</div></div>
+								<div class="item">林爽文 <div class="count">198</div></div>
+								<div class="item">伊能嘉矩 <div class="count">55</div></div>
+								<div class="item">鳥居武龍藏 <div class="count">78</div></div>
+								<div class="item">超級飄髮哥 <div class="count">24</div></div>
+								<div class="item">Max Richter <div class="count">90</div></div>
+							</div>
 						</div>
 
 
-						<div class="title_3">詞類分析-地理統計 <i class="fa fa-caret-down"></i></div>
-						<div class="analysis_2">
-							<div class="item">陳小黑 <div class="count">23</div></div>
-							<div class="item">林爽文 <div class="count">198</div></div>
-							<div class="item">伊能嘉矩 <div class="count">55</div></div>
-							<div class="item">鳥居武龍藏 <div class="count">78</div></div>
-							<div class="item">超級飄髮哥 <div class="count">24</div></div>
-							<div class="item">Max Richter <div class="count">90</div></div>
+
+						<div class="data_interface">
+							<div class="title_2 color_2">書目資料統計-出版年代 <i class="fa fa-caret-down"></i></div>
+							<div class="analysis_2">
+								<div class="item">陳小黑 <div class="count">23</div></div>
+								<div class="item">林爽文 <div class="count">198</div></div>
+								<div class="item">伊能嘉矩 <div class="count">55</div></div>
+								<div class="item">鳥居武龍藏 <div class="count">78</div></div>
+								<div class="item">超級飄髮哥 <div class="count">24</div></div>
+								<div class="item">Max Richter <div class="count">90</div></div>
+							</div>
+						</div>
+						<div class="data_interface">
+							<div class="title_2 color_2">書目資料統計-學科分類 <i class="fa fa-caret-down"></i></div>
+							<div class="analysis_2">
+								<div class="item">陳小黑 <div class="count">23</div></div>
+								<div class="item">林爽文 <div class="count">198</div></div>
+								<div class="item">伊能嘉矩 <div class="count">55</div></div>
+								<div class="item">鳥居武龍藏 <div class="count">78</div></div>
+								<div class="item">超級飄髮哥 <div class="count">24</div></div>
+								<div class="item">Max Richter <div class="count">90</div></div>
+							</div>
 						</div>
 
-						<div class="title_4">詞類分析-關鍵字統計 <i class="fa fa-caret-down"></i></div>
-						<div class="analysis_3">
-							<div class="item">陳小黑 <div class="count">23</div></div>
-							<div class="item">林爽文 <div class="count">198</div></div>
-							<div class="item">伊能嘉矩 <div class="count">55</div></div>
-							<div class="item">鳥居武龍藏 <div class="count">78</div></div>
-							<div class="item">超級飄髮哥 <div class="count">24</div></div>
-							<div class="item">Max Richter <div class="count">90</div></div>
+						<div class="data_interface">
+							<div class="title_2 color_2">書目資料統計-文獻出處 <i class="fa fa-caret-down"></i></div>
+							<div class="analysis_2">
+								<div class="item">陳小黑 <div class="count">23</div></div>
+								<div class="item">林爽文 <div class="count">198</div></div>
+								<div class="item">伊能嘉矩 <div class="count">55</div></div>
+								<div class="item">鳥居武龍藏 <div class="count">78</div></div>
+								<div class="item">超級飄髮哥 <div class="count">24</div></div>
+								<div class="item">Max Richter <div class="count">90</div></div>
+							</div>
+						</div>
+
+
+
+						<div class="data_interface">
+							<div class="title_2 color_3">詞頻分析統計-人物統計 <i class="fa fa-caret-down"></i></div>
+							<div class="analysis_2">
+								<div class="item">陳小黑 <div class="count">23</div></div>
+								<div class="item">林爽文 <div class="count">198</div></div>
+								<div class="item">伊能嘉矩 <div class="count">55</div></div>
+								<div class="item">鳥居武龍藏 <div class="count">78</div></div>
+								<div class="item">超級飄髮哥 <div class="count">24</div></div>
+								<div class="item">Max Richter <div class="count">90</div></div>
+							</div>
+						</div>
+
+						<div class="data_interface">
+							<div class="title_2 color_3">詞頻分析統計-地理統計 <i class="fa fa-caret-down"></i></div>
+							<div class="analysis_2">
+								<div class="item">陳小黑 <div class="count">23</div></div>
+								<div class="item">林爽文 <div class="count">198</div></div>
+								<div class="item">伊能嘉矩 <div class="count">55</div></div>
+								<div class="item">鳥居武龍藏 <div class="count">78</div></div>
+								<div class="item">超級飄髮哥 <div class="count">24</div></div>
+								<div class="item">Max Richter <div class="count">90</div></div>
+							</div>
 						</div>
 
 
@@ -581,6 +722,7 @@
 
 		</div>
 	
+		新增資料夾：<input type="text" style="width: 400px; margin-bottom: 15px; margin-left: 10px;">
 
 		<div class="clear"></div>	
 		</div>
@@ -595,6 +737,7 @@
 		<h6>您共選擇九筆資料進行內容標籤</h6>
 	</div>
 	<div class="main">
+		
 		<div class="ss1">
 			選擇資料夾： 				
 			<select name="" id="" class="select_module p30">
@@ -606,8 +749,9 @@
 				<option value="出版年月">建立新資料夾</option>
 				
 			</select>
-
 		</div>
+
+
 	
 
 		<div class="clear"></div>	

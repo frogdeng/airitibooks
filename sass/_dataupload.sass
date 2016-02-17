@@ -1,0 +1,329 @@
+
+
+@import reset
+@import compass
+@import compass/css3
+@import ../bower_components/susy/sass/susy
+
+@import _map.scss
+
+$susy: (debug: (image: hide))
+
+$mainColor: #13AAC7
+
+
+
+
+
+.blue
+	color: $mainColor
+
+.orange
+	color: #F5A623
+
+
+$upload_desktop: 12 split
+$upload_pad: 8 split
+
+$breakpoint_desktop: 950px
+$breakpoint_pad: 550px
+
+
+
+.upload_wrapper
+	margin-top: 20px
+	padding: 0 30px
+	h6 
+		font-size: 15px
+		line-height: 1.5
+		color: #666
+		margin-bottom: 8px
+
+	+susy-breakpoint($breakpoint_pad, $upload_pad)
+		+container
+		
+
+	+susy-breakpoint($breakpoint_desktop, $upload_desktop)
+		+container
+		.spacebar_base
+			width: 100%
+			height: 5px
+			margin-top: 10px
+			background: #c0c0c0
+			position: relative
+			.spacebar_progress
+				position: absolute
+				height: 5px
+				left: 0
+				top: 0
+				background: #48C0D7
+		.spaceinfo
+			float: left		
+		.buyspace
+			float: right
+			a 
+				display: block
+				margin-top: -5px
+				border: 1px solid #c0c0c0
+				padding: 10px
+				font-size: 14px
+				+transition(all .5s)
+				&:hover
+					background: #48C0D7
+					color: #FFF
+					border: 1px solid #48C0D7
+
+
+		.openeData
+			width: 50%
+			height: 40px
+			line-height: 40px
+			font-size: 14px
+			color: #888
+			margin: 0 auto
+			text-align: center
+			margin-top: 50px
+			margin-bottom: 50px
+			border: 1px dotted #888
+			cursor: pointer
+			+transition(all .5s)
+			&:hover
+				background: #48C0D7
+				border: 1px solid #48C0D7
+				color: #FFF
+		.upload_note
+			width: 100%
+			margin-bottom: 10px
+			h5 
+				text-align: center
+				font-size: 15px
+				color: #555
+		.upload_go
+			border: 1px solid #c0c0c0
+			padding: 30px
+			.upload_PDF	
+				height: 450px
+				float: left
+				width: 48%
+				background: #F5F5F5
+				text-align: center
+				color: #c0c0c0
+				padding: 30px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				.ggg
+					width: 100%
+
+					h5
+						font-size: 50px
+						margin-bottom: 10px
+						text-align: center		
+					h6 
+						font-size: 20px
+						text-align: center		
+					p 
+						font-size: 14px
+						color: #888
+						text-align: center		
+						line-height: 1.4
+
+
+			.upload_TEXT
+				height: 450px
+				float: right
+				width: 48%
+				background: #F5F5F5
+				text-align: center
+				color: #c0c0c0
+				padding: 30px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				.ggg
+					width: 100%
+
+					h5
+						font-size: 50px
+						margin-bottom: 10px
+						text-align: center		
+					h6 
+						font-size: 20px
+						text-align: center		
+					p 
+						font-size: 14px
+						color: #888
+						text-align: center		
+						line-height: 1.4	
+
+
+
+		.upload_list
+			+span(6)
+			margin-bottom: 20px
+			border: 1px solid #e9e9e9
+			padding: 15px 25px 20px 20px
+			position: relative
+			+transition(all .5s)
+			&:hover
+				background: #f9f9f9
+
+			.cancel
+				position: absolute
+				background: #e9e9e9
+				padding: 3px 5px
+				right: 0px
+				top: 0px
+				color: #999
+				font-size: 20px
+				cursor: pointer
+				+transition(all .5s)
+				&:hover
+					color: #222
+			.upload_checkbox
+				position: absolute
+				right: 30px
+				top: 6px
+				font-size: 14px
+				input
+					display: none 
+
+				label div
+					width: 20px
+					height: 20px
+					display: inline-block
+					border: 1px solid #c8c8c8
+					text-align: center
+					line-height: 20px
+					margin-right: 6px	
+					cursor: pointer
+					+transition(all .3s)
+					
+
+				label i
+					font-size: 18px
+					opacity: 0
+					color: #48C0D7
+					margin-top: 1px
+					+transition(all 0.3s)
+
+				label:hover div
+					border: 1px solid #999
+
+				input:checked+label i
+					opacity: 1
+					+transition(all 0.3s)
+
+				input:checked+label div
+					background: #FFF
+
+
+			.img_small
+				width: 23%
+				float: left
+				border: 1px solid #c0c0c0
+			.t_title
+				width: 72%
+				float: right
+				p 
+					&:focus
+						outline: 0
+
+			.upload_btn	
+				border: 1px solid #c0c0c0
+				padding: 5px
+				margin-top: 10px
+				width: 23%    
+				text-align: center
+				font-size: 14px
+				background: #FFF
+				cursor: pointer
+				+transition(all 0.3s ease)
+				&:hover
+					background: #24AAC5
+					color: #FFF
+					border: 1px solid #24AAC5
+
+			.upload_input
+				margin-top: 20px
+				border-top: 1px solid #c0c0c0
+				padding: 20px 0
+				color: #888
+				// background: #f5f5f5
+				h6
+					font-size: 15px
+					color: #888
+					margin-bottom: 5px
+
+				width: 100%
+				padding-left: 20px
+				.tag_item_a
+					border: 1px solid #888
+					color: #888
+					font-size: 13px
+					float: left
+					padding: 5px 5px
+					margin-right: 10px
+					margin-bottom: 10px
+					background: #FFF
+					a 
+						display: block
+						margin-left: 5px
+						float: right
+						color: #e0e0e0
+						&:hover
+							color: #888
+				
+				.tag_item_add
+					// border: 1px solid #888
+					color: #48C0D7	
+					font-size: 23px
+					margin-right: 10px
+					margin-bottom: 10px
+					a
+						display: block
+						color: #48C0D7
+					input[type='text']
+						display: block
+						width: 50%
+						float: left
+						margin-right: 5px
+						border: 1px solid #c0c0c0
+						height: 23px
+						padding-left: 10px
+						font-size: 13px
+
+	
+			h1
+				width: 90%
+				font-size: 20px
+				margin-bottom: 20px
+				line-height: 1.2
+				&:focus
+					outline: 0
+			
+			p 
+				font-size: 14px
+				color: #888
+				line-height: 1.3
+				margin-bottom: 7px
+				&:focus
+					outline: 0
+
+
+
+
+
+
+.w50
+	width: 50%
+
+
+
+

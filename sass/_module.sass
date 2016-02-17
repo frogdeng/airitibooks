@@ -34,8 +34,8 @@ a
 $desktop: 12 after
 $pad: 8 after
 
-$breakpoint_desktop: 950px
-$breakpoint_pad: 550px
+$breakpoint_desktop: 650px
+$breakpoint_pad: 0px
 
 
 $susy: (debug: (image: hide))
@@ -78,6 +78,10 @@ header
 			background: #444646
 			font-size: 13px
 			color: #FFF
+			+transition(all .3s)
+			&:hover
+				background: #48C0D7
+
 	.search
 		position: absolute
 		width: 30%
@@ -90,29 +94,33 @@ header
 			display: block
 			float: left
 			width: 80%
-			height: 30px
-			margin-top: 15px
-			background: #222
+			height: 36px
+			margin-top: 12px
+			background: #888
 
 			border: none
-			border-bottom: 1px solid #555
+			// border-bottom: 1px solid #555
 			box-shadow: none
-			color: #888
+			color: #FFF
 			// border-radius: 20px
 			padding: 0 15px
 			
 		a
 			display: block
 			float: left
-			margin-top: 21px
+			margin-top: 18px
 			margin-left: -30px
-			color: #777
+			color: #c0c0c0
+			font-size: 20px
+			+transition(all .3s)
+			&:hover
+				color: #FFF
 		.search_dropdown
 			float: left
-			margin-left: 10px
+			margin-left: 5px
 			margin-top: 12px
 			background: #444
-			height: 35px
+			height: 36px
 			width: 35px
 			line-height: 35px
 			color: #999
@@ -148,7 +156,7 @@ header
 				width: 70px
 				background: #e9e9e9
 				position: fixed
-				z-index: 5000
+				z-index: 1000
 				top: 60px
 				padding-top: 30px
 				ul 
@@ -185,6 +193,7 @@ header
 					background: #FFF
 					border-right: 1px solid #E9E8E8
 					overflow: auto
+					z-index: 3100
 					+transition(all .3s)
 					.close
 						position: absolute
@@ -196,11 +205,14 @@ header
 					.right_content
 						margin-top: 40px
 					
+			.uploadcontent
+				margin-left: 70px
+				width: 100%
 
 					
 			.maincontent
 				height: 100%
-				width: 100%
+				min-width: 600px
 				background: #FFF
 				padding: 0px
 				position: relative
@@ -234,6 +246,7 @@ header
 					width: 220px
 					background: #FFF
 					overflow: auto
+					z-index: 3200
 					+transition(all .3s)
 					.close
 						position: absolute
@@ -351,25 +364,25 @@ footer
 
 
 
-			
-
-
-
 .search_dropdown_content
-	// position: absolute
-	// top: 0px
-	// position: fixed
-	width: 100%
-	z-index: 1000
+	position: absolute
+	top: 60px
+	left: 70px
+
+	width: 95%
 	height: 320px
-	background: rgba(0,0,0, .8)
+	z-index: 1000
+	background: rgba(0,0,0, .85)
 	padding: 0px
 	color: #FFF
 	font-size: 14px
 	line-height: 1.4
+	border-top: 1px solid #444
 	display: none
 	// +transition(all .2s)
 	.forthis
+		width: 90%
+		margin: 0 auto
 		button
 			width: 100px
 			height: 35px
@@ -396,10 +409,12 @@ footer
 				display: block
 				width: 100%
 				border: 1px solid #777
-				background: #666
+				background: #505050
 				height: 30px
 				padding-left: 10px
-				font-size: 13px
+				font-size: 14px
+				color: #FFF
+
 		.input_2
 			width: 50%
 			height: 30px
@@ -410,10 +425,10 @@ footer
 				display: block
 				width: 100%
 				border: 1px solid #777
-				background: #666
+				background: #505050
 				height: 30px
 				padding-left: 10px
-				font-size: 13px	
+				font-size: 14px	
 				color: #FFF
 
 		.checkbox_1
@@ -456,11 +471,13 @@ footer
 		width: 100%
 		height: 40px
 		line-height: 40px
-		padding-left: 20px
+		// padding-left: 20px
 		background: #48C0D7
 		font-size: 14px
 		color: #FFF
 		cursor: pointer
+		text-align: center
+		
 	.categery_item
 		width: 100%
 		height: 40px
@@ -495,7 +512,6 @@ footer
 .title_1, .title_2, .title_3, .title_4, .title_5 
 	height: 30px
 	width: 100%	
-	background: #48C0D7
 	text-align: center
 	line-height: 30px
 	font-size: 14px
@@ -503,17 +519,18 @@ footer
 	cursor: pointer
 	border-bottom: 1px solid #FFF
 	i 
-		color: #129cb6
+		color: rgba(255, 255, 255, .4)
 
-.editmemo
+.editmemo, .analysis_2
 	padding: 10px
 	margin-bottom: 10px
-	display: none
+	// display: none
 
 	textarea
 		width: 100%
 		height: 160px
 		padding: 10px
+		margin-top: 5px
 		color: #888
 		font-size: 13px
 		border: 1px solid #c0c0c0
@@ -532,7 +549,7 @@ footer
 		&:hover
 			background: #444
 
-.analysis_1, .analysis_2, .analysis_3
+.analysis_1, .analysis_2, .analysis_3, .analysis_4
 	padding: 0 5px
 	margin-bottom: 10px
 	display: none
@@ -553,16 +570,18 @@ footer
 .edittag
 	padding: 10px
 	margin-bottom: 10px
-	display: none
 	textarea
-		width: 80%
+		width: 83%
 		height: 30px
 		margin-top: 5px
 		margin-right: 5px
 		padding: 5px
 		color: #888
 
-	a	 
+	a
+		display: block
+		float: right
+
 		i 
 			font-size: 30px
 			margin-top: 5px
@@ -583,6 +602,22 @@ footer
 
 .close_paper
 	display: none
+
+
+
+.color_1
+	background: #758d94
+
+.color_2
+	background: #1b6d91
+
+.color_3
+	background: #2facb2
+
+.color_4
+	background: #48C0D7
+
+
 
 
 
